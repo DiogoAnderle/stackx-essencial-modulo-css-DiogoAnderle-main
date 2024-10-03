@@ -1,5 +1,5 @@
 .main-header-mobile,
-#btn-menu-mobile{
+#btn-menu-mobile {
    display: none;
 }
 
@@ -19,35 +19,82 @@
       transition: 0.5s;
       overflow: hidden;
    }
-   #btn-menu-mobile{
+   
+#btn-menu-mobile {
+   width: 35px;
+   height: 35px;
+   background: transparent;
+   cursor: pointer;
+   border:none;
+   margin-right: 15px;
+}
+
+.burger {
+   width: 20px;
+   height: 3px;
+   background-color: #1c6097;
+   display: block;
+   margin: 5px auto;
+   position: relative;
+   transform-origin: center;
+   transition: 0.5s;
+}
+
+#btn-menu-mobile.active .burger:nth-child(1) {
+   content:"";
+   transform: translateY(5px) rotate(-45deg);
+   height: 4px;
+   background-color: red;
+
+}
+
+#btn-menu-mobile.active .burger:nth-child(3) {
+   transform: translateY(-4px) rotate(45deg);
+   height: 4px;
+   background-color: red;
+
+}
+
+#btn-menu-mobile.active .burger:nth-child(2) {
+   display: none;
+
+}
+
+   #btn-menu-mobile {
       display: block;
    }
-   
-   .main-header-mobile nav a{
+
+   .main-header-mobile nav a {
       color: #fff;
       display: block;
       padding: 20px 30px;
       transition: ease .5s;
    }
-   .main-header-mobile nav a:hover{
+
+   .main-header-mobile nav a:hover {
       background-color: #1c6097;
    }
 
-   .main-header-right{
+   .backtitle{
+      display: none;
+   } 
+   
+   .main-header-right {
       display: none;
    }
 
-   .main-header-mobile.open{
+   .main-header-mobile.open {
       visibility: visible;
       height: 100vh
    }
 
-   .image-home,
    #home .right,
-   .image-about{
+   .image-home,
+   .image-about {
       display: none;
    }
-   #home .left{
+
+   #home .left {
       display: flex;
       text-align: left;
       flex-direction: column;
@@ -56,51 +103,75 @@
       margin-bottom: 45px;
    }
 
-   #about .right{
-      width: 90%;
-      margin-right: 15%;
-      display: block;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 45px;
-   }
-   #about .right .btn{
-      margin-left: 25%;
+   #home .left h1 {
+      font-size: 5em;
    }
 
-   .container-services{
+   #home .left h3 {
+      font-size: 1.8em;
+   }
+
+   .container-about{
+      width: 85%;
+      gap: 0;
+      margin-top: 0;
+      flex-direction: column;
+   }
+
+   #about .right {
+      width: 90%;
+   }
+   #about .right span{
+      font-size: 0.9rem;
+   }
+   #about .btn{
+      display: inline-block;
+      font-size: 0.9rem;
+   }
+   .container-btn{
+      display: flex;
+      justify-content: center;
+   }
+
+
+   .container-services {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      margin: 50px;
+      margin: 50px auto;
    }
-   .card-services{
+
+   .card-services {
       width: 70%;
       margin: 0px;
    }
 
    .container-resume,
    .container-resume .left,
-   .container-resume .right{
+   .container-resume .right {
       display: block;
       width: 95%;
    }
 
-   .container-resume h3{
+   .container-resume h3 {
       font-size: 1.2rem;
    }
+
    .container-resume h4,
-   .container-resume p{
+   .container-resume p {
       font-size: 1.0rem;
    }
 
-   #contact .left{
-      width: 90%;
+   #contact .left {
+      width: 85%;
    }
-   #contact .right{
+
+   #contact .right {
       display: none;
+   }
+   footer{
+      padding: auto;
    }
 
 

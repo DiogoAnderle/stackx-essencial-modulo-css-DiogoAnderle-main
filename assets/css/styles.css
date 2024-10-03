@@ -179,50 +179,6 @@ a {
    filter: drop-shadow(10px 10px 4px #257fc9);
 }
 
-#btn-menu-mobile {
-   width: 35px;
-   height: 35px;
-   background: transparent;
-   cursor: pointer;
-   border:none;
-   margin-right: 15px;
-}
-
-.burger {
-   width: 30px;
-   height: 3px;
-   background-color: #1c6097;
-   display: block;
-   margin: 5px auto;
-   position: relative;
-   transform-origin: center;
-   transition: 0.5s;
-}
-#btn-menu-mobile.active{
-   border: 1px solid red;
-   border-radius: 50%;
-}
-
-#btn-menu-mobile.active .burger:nth-child(1) {
-   content:"";
-   transform: translateY(5px) rotate(-45deg);
-   height: 4px;
-   background-color: red;
-
-}
-
-#btn-menu-mobile.active .burger:nth-child(3) {
-   transform: translateY(-4px) rotate(45deg);
-   height: 4px;
-   background-color: red;
-
-}
-
-#btn-menu-mobile.active .burger:nth-child(2) {
-   display: none;
-
-}
-
 
 /* ********************************************* */
 
